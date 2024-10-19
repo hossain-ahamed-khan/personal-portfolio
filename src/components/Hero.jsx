@@ -1,3 +1,4 @@
+import resume from '../assets/Hossain Ahamed Khan_Resume.pdf';
 
 const Hero = () => {
     return (
@@ -12,7 +13,9 @@ const Hero = () => {
                     </p>
                     <div className="space-x-6 pt-3">
                         <button className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl text-slate-100 px-6">Contact me</button>
-                        <button className="btn btn-outline rounded-3xl text-slate-100 px-6">Download Resume</button>
+                        <a href={resume} download="resume">
+                            <button className="btn btn-outline rounded-3xl text-slate-100 px-6">Download Resume</button>
+                        </a>
                     </div>
                 </div>
             </div>
