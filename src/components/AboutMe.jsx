@@ -89,8 +89,8 @@ const tools = [
 ]
 const AboutMe = () => {
     return (
-        <div className='w-3/5 mx-auto'>
-            <h1 className='text-3xl my-3 font-bold'>Technology and Tools I Use</h1>
+        <div className='w-3/5 mx-auto mb-20'>
+            <h1 className='text-3xl my-3 font-bold'>Technologies and Tools I Use</h1>
             <p className='mb-6 mt-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint unde minima dolor repellendus quisquam nisi amet deserunt impedit perferendis iste!</p>
 
             <div className='grid grid-cols-3 lg:grid-cols-4 gap-1 lg:gap-3'>

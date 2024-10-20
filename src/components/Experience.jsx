@@ -2,7 +2,7 @@ import exp_img from '../assets/experience-high-resolution-logo-transparent.png';
 
 const Experience = () => {
     return (
-        <div className="w-3/5 flex mx-auto bg-gradient-to-r from-[#07366b] via-[#21354d] to-[#1d232a] text-slate-100 rounded-lg p-6 my-10">
+        <div className="w-3/5 flex mx-auto bg-gradient-to-r from-[#07366b] via-[#21354d] to-[#1d232a] text-slate-100 rounded-lg p-6 mb-20">
             <div className="w-1/4">
                 <img className='w-1/2 mx-auto h-64' src={exp_img} alt="EXPERIENCE" />
             </div>
