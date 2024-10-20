@@ -5,7 +5,7 @@ const Education = () => {
         <div id='education' className="w-3/5 mx-auto my-14">
             <h1 className='text-3xl font-bold text-center mb-4'>Education</h1>
             <div className="flex flex-col lg:flex-row shadow-xl bg-gradient-to-r from-[#1d232a] via-[#21354d] to-[#07366b] text-slate-100 rounded-lg p-6">
-                <div className="space-y-3">
+                <div className="space-y-3 pt-4">
                     <h2 className="text-3xl lg:text-5xl font-bold">BSc in Software Engineering</h2>
                     <p className='text-lg font-semibold'>At Daffodil International University</p>
                     <p>From 2015 to 2019</p>
