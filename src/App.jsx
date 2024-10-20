@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe"
+import Education from "./components/Education"
 import Experience from "./components/Experience"
 import Hero from "./components/Hero"
 import MyProjects from "./components/MyProjects"
@@ -13,6 +14,7 @@ function App() {
       <AboutMe />
       <Experience />
       <MyProjects />
+      <Education />
     </>
   )
 }
