@@ -1,11 +1,12 @@
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const navLink = <>
-    <li><a>Home</a></li>
-    <li><a>About me</a></li>
-    <li><a>Experience</a></li>
-    <li><a>Projects</a></li>
-    <li><a>Education</a></li>
+    <AnchorLink href="#home"><li><a>Home</a></li></AnchorLink>
+    <AnchorLink offset={100} href="#about-me"><li><a>About me</a></li></AnchorLink>
+    <AnchorLink offset={50} href="#experience"><li><a>Experience</a></li></AnchorLink>
+    <AnchorLink offset={50} href="#projects"><li><a>Projects</a></li></AnchorLink>
+    <AnchorLink offset={50} href="#education"><li><a>Education</a></li></AnchorLink>
 </>
 
 const Navbar = () => {
@@ -30,7 +31,9 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end pr-5">
-                <a className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl text-slate-100">Contact me</a>
+                <AnchorLink offset={50} href="#contact">
+                    <a className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-3xl text-slate-100">Contact me</a>
+                </AnchorLink>
             </div>
         </div>
     );

@@ -2,7 +2,7 @@ import edu_img from '../assets/education.png';
 
 const Education = () => {
     return (
-        <div className="w-3/5 mx-auto my-10 my-14">
+        <div id='education' className="w-3/5 mx-auto my-14">
             <h1 className='text-3xl font-bold text-center mb-4'>Education</h1>
             <div className="flex flex-col lg:flex-row shadow-xl bg-gradient-to-r from-[#1d232a] via-[#21354d] to-[#07366b] text-slate-100 rounded-lg p-6">
                 <div className="space-y-3">

@@ -4,7 +4,7 @@ import real_estate from '../assets/real_estate.jpg';
 
 const MyProjects = () => {
     return (
-        <div className="w-3/5 mx-auto my-10 ">
+        <div id='projects' className="w-3/5 mx-auto my-10 ">
 
             <h1 className="text-3xl font-bold">My Projects</h1>
 
