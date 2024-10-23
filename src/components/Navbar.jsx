@@ -1,6 +1,8 @@
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { GiHamburgerMenu } from "react-icons/gi";
 
+import logo_img from '../assets/hossain-high-resolution-logo-transparent.png';
+
 const navLink = <>
     <AnchorLink href="#home"><li><a>Home</a></li></AnchorLink>
     <AnchorLink offset={100} href="#about-me"><li><a>About me</a></li></AnchorLink>
@@ -23,7 +25,9 @@ const Navbar = () => {
                         {navLink}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Hossain</a>
+                <a className="pl-0 lg:pl-5">
+                    <img className="w-10 h-10" src={logo_img} alt="logo_img" />
+                </a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-5 space-x-5">

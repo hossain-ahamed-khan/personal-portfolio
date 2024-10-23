@@ -4,15 +4,15 @@ import real_estate from '../assets/real_estate.jpg';
 
 const MyProjects = () => {
     return (
-        <div id='projects' className="w-3/5 mx-auto my-10 ">
+        <div id='projects' className="w-11/12 lg:w-3/5 mx-auto mb-20 lg:mb-36">
 
-            <h1 className="text-3xl font-bold">My Projects</h1>
+            <h1 className="text-3xl font-bold text-center mb-10">My Projects</h1>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 mt-6 gap-3 lg:gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 mt-6 gap-4 lg:gap-6">
 
                 <div className="card bg-base-300 shadow-xl p-3">
-                    <figure>
-                        <img className='w-full h-52 rounded-2xl'
+                    <figure className='p-2'>
+                        <img className='w-full h-52 rounded-xl'
                             src={diagnostic_img}
                             alt="diagnostic_img" />
                     </figure>
@@ -43,8 +43,8 @@ const MyProjects = () => {
 
 
                 <div className="card bg-base-300 shadow-xl p-3">
-                    <figure>
-                        <img className='w-full h-52 rounded-2xl'
+                    <figure className='p-2'>
+                        <img className='w-full h-52 rounded-xl'
                             src={art_img}
                             alt="art_img" />
                     </figure>
@@ -75,8 +75,8 @@ const MyProjects = () => {
 
 
                 <div className="card bg-base-300 shadow-xl p-3">
-                    <figure>
-                        <img className='w-full h-52 rounded-2xl'
+                    <figure className='p-2'>
+                        <img className='w-full h-52 rounded-xl'
                             src={real_estate}
                             alt="real_estate" />
                     </figure>

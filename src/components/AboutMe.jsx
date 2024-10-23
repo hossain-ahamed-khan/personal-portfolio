@@ -89,11 +89,11 @@ const tools = [
 ]
 const AboutMe = () => {
     return (
-        <div id='about-me' className='w-3/5 mx-auto mb-20'>
-            <h1 className='text-3xl my-3 font-bold'>Technologies and Tools I Use</h1>
-            <p className='mb-6 mt-3'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint unde minima dolor repellendus quisquam nisi amet deserunt impedit perferendis iste!</p>
+        <div id='about-me' className='w-11/12 lg:w-3/5 mx-auto mb-20 lg:mb-36'>
+            <h1 className='text-3xl my-3 font-bold text-center'>Technologies and Tools I Use</h1>
+            <p className='mb-10 mt-5 text-center m'>Here are some commonly used technologies and tools you might list for web development, especially given your specialization in the MERN stack.</p>
 
-            <div className='grid grid-cols-3 lg:grid-cols-4 gap-1 lg:gap-3'>
+            <div className='grid grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-3'>
                 {
                     tools.map((tool) =>
                         <div key={tool.id} className='w-full border border-slate-700 rounded-xl p-2'>

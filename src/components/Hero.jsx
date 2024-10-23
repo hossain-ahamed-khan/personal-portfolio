@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <div className="hero bg-base-100 min-h-screen">
             <div className="hero-content text-center">
-                <div className="max-w-lg">
+                <div className="w-full lg:w-3/5 space-y-2">
                     <p>I&apos;m</p>
                     <h1 className="text-5xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text">Hossain Ahamed Khan</h1>
                     <p className="pt-3 text-xl">MERN Stack Developer</p>

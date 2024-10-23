@@ -34,7 +34,7 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact" className="w-3/5 mx-auto my-20">
+        <div id="contact" className="w-11/12 lg:w-3/5 mx-auto mb-20 lg:mb-36">
             <h1 className="text-3xl font-bold my-10 text-center">Get in touch</h1>
 
             <div className="flex flex-col lg:flex-row gap-6">
@@ -44,17 +44,17 @@ const Contact = () => {
                     <p className="py-6">
                         Im available to talk about new projects, so feel free to send me a message about anything you want to work on.
                     </p>
-                    <div>
+                    <div className="space-y-1">
                         <div className="flex gap-2 items-center">
-                            <CiMail />
+                            <CiMail className="text-xl" />
                             <p>hossainahamedk@gmail.com</p>
                         </div>
                         <div className="flex gap-2 items-center">
-                            <FaGithub />
+                            <FaGithub className="text-xl" />
                             <a href="https://github.com/hossain-ahamed-khan" target="blank"><p>GitHub</p></a>
                         </div>
                         <div className="flex gap-2 items-center">
-                            <CiLinkedin />
+                            <CiLinkedin className="text-xl" />
                             <a href="https://www.linkedin.com/in/hossain-ahamed-khan-103307326/" target="blank"><p>LinkedIn</p></a>
                         </div>
 
@@ -79,7 +79,7 @@ const Contact = () => {
                             <label className="label">
                                 <span className="text-md font-semibold">Message</span>
                             </label>
-                            <textarea className="bg-slate-700 p-2 rounded-lg" type="text" name="message" rows="6" placeholder="Write your message" required />
+                            <textarea className="bg-slate-700 p-2 rounded-lg" type="text" name="message" rows="5" placeholder="Write your message" required />
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-primary"><input type="submit" value="Send" /></button>
