@@ -6,7 +6,6 @@ import emailjs from '@emailjs/browser';
 import Swal from "sweetalert2";
 
 const Contact = () => {
-
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -21,11 +20,10 @@ const Contact = () => {
                     console.log('SUCCESS!');
                     e.target.reset();
                     Swal.fire({
-                        title: "Message Send",
-                        text: "You successfully send the message",
+                        title: "Message Sent",
+                        text: "You successfully sent the message",
                         icon: "success"
                     });
-
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
@@ -34,55 +32,62 @@ const Contact = () => {
     };
 
     return (
-        <div id="contact" className="w-11/12 lg:w-3/5 mx-auto mb-20 lg:mb-36">
-            <h1 className="text-3xl font-bold my-10 text-center">Get in touch</h1>
+        <div id="contact" className="w-11/12 lg:w-3/5 mx-auto mb-16 relative">
 
-            <div className="flex flex-col lg:flex-row gap-6">
+            <h1 className="text-4xl font-bold text-center text-white mb-10">Get in Touch</h1>
 
-                <div className="w-full lg:w-2/5 p-4">
-                    <h1 className="text-3xl font-bold">Let&apos;s talk</h1>
-                    <p className="py-6">
-                        Im available to talk about new projects, so feel free to send me a message about anything you want to work on.
+            <div className="flex flex-col lg:flex-row gap-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                {/* Left Section */}
+                <div className="w-full lg:w-2/5 space-y-6">
+                    <h2 className="text-3xl font-bold text-white">Let&apos;s Talk</h2>
+                    <p className="text-slate-200">
+                        I&apos;m available to discuss new projects. Feel free to send me a message about anything you&apos;d like to work on.
                     </p>
-                    <div className="space-y-1">
-                        <div className="flex gap-2 items-center">
-                            <CiMail className="text-xl" />
-                            <p>hossainahamedk@gmail.com</p>
+                    <div className="space-y-3">
+                        <div className="flex items-center gap-3">
+                            <CiMail className="text-2xl text-indigo-400" />
+                            <p className="text-slate-200">hossainahamedk@gmail.com</p>
                         </div>
-                        <div className="flex gap-2 items-center">
-                            <FaGithub className="text-xl" />
-                            <a href="https://github.com/hossain-ahamed-khan" target="blank"><p>GitHub</p></a>
+                        <div className="flex items-center gap-3">
+                            <FaGithub className="text-2xl text-indigo-400" />
+                            <a href="https://github.com/hossain-ahamed-khan" target="_blank" rel="noopener noreferrer" className="text-slate-200 hover:text-indigo-500 transition duration-300">
+                                GitHub
+                            </a>
                         </div>
-                        <div className="flex gap-2 items-center">
-                            <CiLinkedin className="text-xl" />
-                            <a href="https://www.linkedin.com/in/hossain-ahamed-khan-103307326/" target="blank"><p>LinkedIn</p></a>
+                        <div className="flex items-center gap-3">
+                            <CiLinkedin className="text-2xl text-indigo-400" />
+                            <a href="https://www.linkedin.com/in/hossain-ahamed-khan-103307326/" target="_blank" rel="noopener noreferrer" className="text-slate-200 hover:text-indigo-500 transition duration-300">
+                                LinkedIn
+                            </a>
                         </div>
-
                     </div>
                 </div>
 
+                {/* Right Section: Form */}
                 <div className="w-full lg:w-3/5">
-                    <form ref={form} onSubmit={sendEmail}>
+                    <form ref={form} onSubmit={sendEmail} className="bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 p-4 rounded-xl shadow-xl">
                         <div className="form-control">
                             <label className="label">
-                                <span className="text-md font-semibold">Name</span>
+                                <span className="text-md font-semibold text-white">Name</span>
                             </label>
-                            <input className="bg-slate-700 p-2 rounded-lg" type="text" name="user_name" placeholder="Enter your name" required />
+                            <input className="bg-white/10 p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 placeholder-slate-300" type="text" name="user_name" placeholder="Enter your name" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="text-md font-semibold">Email</span>
+                                <span className="text-md font-semibold text-white">Email</span>
                             </label>
-                            <input className="bg-slate-700 p-2 rounded-lg" type="email" name="user_email" placeholder="Enter your email" required />
+                            <input className="bg-white/10 p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 placeholder-slate-300" type="email" name="user_email" placeholder="Enter your email" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
-                                <span className="text-md font-semibold">Message</span>
+                                <span className="text-md font-semibold text-white">Message</span>
                             </label>
-                            <textarea className="bg-slate-700 p-2 rounded-lg" type="text" name="message" rows="5" placeholder="Write your message" required />
+                            <textarea className="bg-white/10 p-3 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 placeholder-slate-300" name="message" rows="4" placeholder="Write your message" required></textarea>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn btn-primary"><input type="submit" value="Send" /></button>
+                            <button className="btn bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white px-6 py-2 rounded-lg hover:scale-105 transition-transform duration-300 shadow-lg border-none">
+                                Send
+                            </button>
                         </div>
                     </form>
                 </div>

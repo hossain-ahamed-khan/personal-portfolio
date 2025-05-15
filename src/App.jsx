@@ -11,14 +11,16 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Hero />
-      <AboutMe />
-      <Experience />
-      <MyProjects />
-      <Education />
-      <Contact />
-      <Footer />
+      <div className="bg-gradient-to-r from-indigo-900 via-purple-900 to-pink-900 relative overflow-hidden">
+        <Navbar />
+        <Hero />
+        <AboutMe />
+        <Experience />
+        <MyProjects />
+        <Education />
+        <Contact />
+        <Footer />
+      </div>
     </>
   )
 }
