@@ -1,11 +1,11 @@
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-import resume from '../assets/Hossain Ahamed Khan_Resume.pdf';
+import resume from '../assets/Hossain Ahamed Khan Resume.pdf';
 
 const Hero = () => {
     return (
         <div className="hero min-h-96 py-8">
             <div className="text-center relative z-10">
-                <div className="w-full lg:w-3/5 mx-auto p-8 bg-white/10 backdrop-blur-md rounded-3xl shadow-lg border border-white/20 space-y-6">
+                <div className="w-full lg:w-3/5 mx-auto p-8 bg-white/10 backdrop-blur-md rounded-xl shadow-lg border border-white/20 space-y-6">
                     <p className="text-lg text-slate-200">I&apos;m</p>
                     <h1 className="text-5xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text animate-fade-in">
                         Hossain Ahamed Khan
